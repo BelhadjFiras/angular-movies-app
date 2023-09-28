@@ -11,7 +11,7 @@ import { DetailsReviewsComponent } from './components/details-reviews/details-re
 import { NotAuthorizedComponent } from './components/not-authorized/not-authorized.component';
 import { SearchComponent } from './components/search/search.component';
 import { LoaderComponent } from './components/loader/loader.component';
-import { ModalComponent } from './modal/modal.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
