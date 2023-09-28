@@ -1,5 +1,10 @@
-<h1>Welcome to app component</h1>
-
+<h1>Welcome to {{ title | lowercase}}</h1>
+<h3>Today : {{ today | date: 'dd/mm/yyyy' }}</h3>
+<img [src]="imageUrl" [width]="imageWidth">
+<span>
+  Selling price : {{ sellingPrice | currency }}
+</span>
 <hr>
-  <app-details></app-details>
-
+<input #color placeholder="input your color">
+<button (click)="setTextColor(color.value)">Set color</button>
+<p [style.color]="pcolor">time now {{ timeNow }}</p>
