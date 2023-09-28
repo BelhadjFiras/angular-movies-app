@@ -1,10 +1,6 @@
-<h1>Welcome to {{ title | lowercase}}</h1>
-<h3>Today : {{ today | date: 'dd/mm/yyyy' }}</h3>
-<img [src]="imageUrl" [width]="imageWidth">
-<span>
-  Selling price : {{ sellingPrice | currency }}
-</span>
-<hr>
-<input #color placeholder="input your color">
-<button (click)="setTextColor(color.value)">Set color</button>
-<p [style.color]="pcolor">time now {{ timeNow }}</p>
+<!-- Navbar -->
+<app-navbar></app-navbar>
+<!-- Application content -->
+<app-home></app-home>
+<!-- Footer -->
+<app-footer></app-footer>
