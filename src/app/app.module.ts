@@ -13,6 +13,9 @@ import { SearchComponent } from './components/search/search.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { DetailsActorsComponent } from './components/details-actors/details-actors.component';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { AppRoutesModule } from './modules/app.routes';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,9 @@ import { DetailsActorsComponent } from './components/details-actors/details-acto
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
